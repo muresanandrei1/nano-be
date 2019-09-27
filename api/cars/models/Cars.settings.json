@@ -1,0 +1,67 @@
+{
+  "connection": "default",
+  "collectionName": "cars",
+  "info": {
+    "name": "cars",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "nume": {
+      "type": "string"
+    },
+    "poza": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "dotari": {
+      "type": "text"
+    },
+    "tip": {
+      "enum": [
+        "car",
+        "van"
+      ],
+      "type": "enumeration",
+      "default": "car"
+    },
+    "caracteristici": {
+      "type": "string"
+    },
+    "transmisie": {
+      "type": "string"
+    },
+    "consum": {
+      "type": "string"
+    },
+    "putere": {
+      "type": "string"
+    },
+    "volum": {
+      "type": "string"
+    },
+    "carburant": {
+      "type": "string"
+    },
+    "pret1": {
+      "type": "string"
+    },
+    "pret2": {
+      "type": "string"
+    },
+    "pret3": {
+      "type": "string"
+    },
+    "pret4": {
+      "type": "string"
+    }
+  }
+}
